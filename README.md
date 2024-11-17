@@ -1,5 +1,7 @@
 # LearningCourse
-A repository meant to learn from. Growing more as we go
+A repository meant to learn from. 
+
+Each Learning Path is contained in its own branch.
 
 # Learning Courses
 1. [Requirements](#requirements)
