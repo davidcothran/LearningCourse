@@ -11,7 +11,13 @@ Implement a basic FILO using the IContainer
 FILO::FILO(const uint32_t length) :
     m_length(length) // This is called an initializer list
 {
-    // TODO
+    // Create heap memory large enough to store the desired FILO
+    m_arr = new uint32_t[length];
+}
+
+FILO::~FILO()
+{
+    delete[] m_arr;
 }
 
 void FILO::push(const uint32_t valToPush)

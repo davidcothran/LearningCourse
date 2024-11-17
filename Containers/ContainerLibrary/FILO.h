@@ -13,7 +13,7 @@ class FILO : public IIntContainer
 public:
     FILO(uint32_t length);
 
-    ~FILO() = default;
+    ~FILO();
 
     /// \brief This function pushes the argument into the container
     /// \param [in] valToPush The value to push into the object
@@ -48,6 +48,8 @@ protected:
 
 private:
     uint32_t m_length;
+
+    uint32_t* m_arr;
 
 };
 
