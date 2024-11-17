@@ -18,6 +18,8 @@ A repository meant to learn from. Growing more as we go
     - [Embedded](#embedded)
     - [Web Apps](#web)
     - [Game Dev](#gamedev)
+        - [olc](#olc)
+        - [UE5](#ue)
 
 ---
 
@@ -33,8 +35,12 @@ A repository meant to learn from. Growing more as we go
     - [Loops](#loops)
     - [Functions](#functions)
     - [Classes](#classes)
+    - [Pointers](#pointers)
+        - [Stack/Heap](#stack)
     - [Inheritance](#inheritance)
     - [Containers and Polymorphism](#containers)
+    - [TCP/UDP]
+    - [Serial]
     - [More Basics TBD](#more)
 
 
