@@ -34,7 +34,7 @@ Each Learning Path is contained in its own branch.
     - [Visual Studio Install](#vs)
     - [First Program](#first)
     - [Variables](#variables)
-    - [Loops](#loops)
+    - [Loops and Decisions](#loops)
     - [Functions](#functions)
     - [Classes](#classes)
     - [Pointers](#pointers)
@@ -43,6 +43,11 @@ Each Learning Path is contained in its own branch.
     - [Containers and Polymorphism](#containers)
     - [TCP/UDP]
     - [Serial]
+    - [Templates]
+    - [Factories]
+    - [File I/O]
+    - [Threading]
+    - 
     - [More Basics TBD](#more)
 
 
