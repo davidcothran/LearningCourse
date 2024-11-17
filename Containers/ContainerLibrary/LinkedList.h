@@ -1,19 +1,37 @@
-#ifndef FILO_H
-#define FILO_H
+#ifndef LL_H
+#define LL_H
 
 #include "IIntContainer.h"
 
-/// \class FILO
-/// \brief This mimics behavior in a stack object
-///     FILO is First In Last Out
-///     Pushing 10 items onto the stack, the first item pushed should be the last one popped
-///     The most recent item pushed is the next one to pop
-class FILO : public IIntContainer
+class Node
 {
 public:
-    FILO(uint32_t length);
+    Node(uint32_t val, Node* next, Node* prev) :
+        m_val(val),
+        m_next(next),
+        m_prev(prev)
+    {
+    }
 
-    ~FILO() = default;
+    Node* m_next;
+    Node* m_prev;
+    uint32_t m_val;
+};
+
+/// \class LinkedList
+/// \brief This mimics behavior of a LinkedList
+///     Each time push() is called, it will create a Node at the end of the previous node and become the new tail
+///     Each time pop() is called, it will remove the last node in the chain (the tail)
+///     Notes:
+///         Keep track of news and deletes. Don't create memory leaks.
+class LinkedList : public IIntContainer
+{
+public:
+    /// \brief Construcotr
+    LinkedList();
+
+    /// \brief Destructor
+    ~LinkedList() = default;
 
     /// \brief This function pushes the argument into the container
     /// \param [in] valToPush The value to push into the object
@@ -45,10 +63,13 @@ public:
     virtual void clear() override;
 
 protected:
+    uint32_t m_currLength;
+    Node* m_head;
+    Node* m_tail;
 
 private:
-    uint32_t m_length;
 
 };
 
 #endif
+

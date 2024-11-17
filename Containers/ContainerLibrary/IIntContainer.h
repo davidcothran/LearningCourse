@@ -51,6 +51,10 @@ public:
     /// return Size of the container
     virtual uint32_t size() = 0;
 
+    /// \brief Clears the container
+    /// return void
+    virtual void clear() = 0;
+
 protected:
 };
 

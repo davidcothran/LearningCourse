@@ -130,10 +130,12 @@
     <ClInclude Include="FIFO.h" />
     <ClInclude Include="IIntContainer.h" />
     <ClInclude Include="FILO.h" />
+    <ClInclude Include="LinkedList.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FIFO.cpp" />
     <ClCompile Include="FILO.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
